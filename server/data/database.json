@@ -1,0 +1,570 @@
+{
+  "users": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "name": "بطل الأثر البيئي (Demo)",
+      "email": "demo@impactloop.app",
+      "phone": "+966500000000",
+      "password": "password123",
+      "role": "USER",
+      "roles": [
+        "USER"
+      ],
+      "verifiedStatus": "PENDING",
+      "isActive": true,
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "createdAt": "2026-09-21T12:31:30.235Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "name": "مراجع العمليات والرقابة (Admin)",
+      "email": "ops@impactloop.app",
+      "phone": "+966501111111",
+      "password": "password123",
+      "role": "ADMIN",
+      "roles": [
+        "ADMIN",
+        "USER"
+      ],
+      "verifiedStatus": "VERIFIED",
+      "isActive": true,
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "createdAt": "2026-08-22T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333333",
+      "name": "شريك مبادرات الرياض الخضراء (Client)",
+      "email": "client@impactloop.app",
+      "phone": "+966502222222",
+      "password": "password123",
+      "role": "CLIENT",
+      "roles": [
+        "CLIENT"
+      ],
+      "verifiedStatus": "VERIFIED",
+      "isActive": true,
+      "avatarUrl": null,
+      "createdAt": "2026-07-23T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "44444444-4444-4444-4444-444444444444",
+      "name": "فارس (Faris)",
+      "email": "faris@gmail.com",
+      "phone": "+966503333333",
+      "password": "123456789",
+      "role": "ADMIN",
+      "roles": [
+        "USER",
+        "ADMIN",
+        "CLIENT"
+      ],
+      "verifiedStatus": "VERIFIED",
+      "isActive": true,
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "createdAt": "2026-10-21T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    }
+  ],
+  "tokens": [
+    [
+      "mock-access-token",
+      "44444444-4444-4444-4444-444444444444"
+    ],
+    [
+      "mock-refresh-token",
+      "44444444-4444-4444-4444-444444444444"
+    ]
+  ],
+  "wallets": {
+    "11111111-1111-1111-1111-111111111111": {
+      "balancePoints": 340,
+      "transactions": [
+        {
+          "id": "w-seed-1",
+          "submissionId": "s3",
+          "type": "REWARD",
+          "amountPoints": 80,
+          "reason": "مكافأة اعتماد إثبات تنظيف الشارع البيئي",
+          "createdAt": "2026-10-19T12:31:30.237Z"
+        },
+        {
+          "id": "w-seed-2",
+          "submissionId": null,
+          "type": "REWARD",
+          "amountPoints": 120,
+          "reason": "مكافأة تسليم مواد إعادة التدوير بالمركز",
+          "createdAt": "2026-10-16T12:31:30.237Z"
+        },
+        {
+          "id": "w-seed-3",
+          "submissionId": null,
+          "type": "ADJUSTMENT",
+          "amountPoints": 140,
+          "reason": "بونص ترحيبي لإكمال ملف التحقق الشخصي",
+          "createdAt": "2026-10-11T12:31:30.237Z"
+        }
+      ]
+    },
+    "22222222-2222-2222-2222-222222222222": {
+      "balancePoints": 500,
+      "transactions": []
+    },
+    "44444444-4444-4444-4444-444444444444": {
+      "balancePoints": 500,
+      "transactions": [
+        {
+          "id": "w-seed-faris-1",
+          "submissionId": null,
+          "type": "REWARD",
+          "amountPoints": 500,
+          "reason": "رصيد ترحيبي",
+          "createdAt": "2026-10-21T12:31:30.237Z"
+        }
+      ]
+    }
+  },
+  "campaigns": [
+    {
+      "id": "c1111111-1111-1111-1111-111111111111",
+      "clientId": "33333333-3333-3333-3333-333333333333",
+      "title": "مبادرة الرياض الخضراء - مسار النرجس",
+      "description": "حملة مجتمعية كبرى لتوثيق ومعالجة النفايات وتعزيز إعادة التدوير في الأحياء الشمالية.",
+      "budgetTotal": 50000,
+      "budgetRemaining": 41200,
+      "areaGeoJson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.66,
+              24.71
+            ],
+            [
+              46.72,
+              24.71
+            ],
+            [
+              46.72,
+              24.78
+            ],
+            [
+              46.66,
+              24.78
+            ],
+            [
+              46.66,
+              24.71
+            ]
+          ]
+        ]
+      },
+      "taskTypes": [
+        "DUMPING_REPORT",
+        "RECYCLING_DROPOFF"
+      ],
+      "status": "ACTIVE",
+      "startAt": "2026-10-16T12:31:30.237Z",
+      "endAt": "2026-11-15T12:31:30.237Z",
+      "createdAt": "2026-10-11T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "c2222222-2222-2222-2222-222222222222",
+      "clientId": "33333333-3333-3333-3333-333333333333",
+      "title": "تحدي التنقل الخالي من الانبعاثات",
+      "description": "استخدام المترو والحافلات والدراجات الهوائية بدلاً من السيارات وتوثيق الرحلات.",
+      "budgetTotal": 25000,
+      "budgetRemaining": 21500,
+      "areaGeoJson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.6,
+              24.65
+            ],
+            [
+              46.75,
+              24.65
+            ],
+            [
+              46.75,
+              24.8
+            ],
+            [
+              46.6,
+              24.8
+            ],
+            [
+              46.6,
+              24.65
+            ]
+          ]
+        ]
+      },
+      "taskTypes": [
+        "PUBLIC_TRANSPORT"
+      ],
+      "status": "ACTIVE",
+      "startAt": "2026-10-19T12:31:30.237Z",
+      "endAt": "2026-11-30T12:31:30.237Z",
+      "createdAt": "2026-10-17T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    }
+  ],
+  "missions": [
+    {
+      "id": "m1111111-1111-1111-1111-111111111111",
+      "title": "تنظيف مسار الشارع البيئي",
+      "description": "توثيق إزالة النفايات والمخلفات على طول المسار المخصص وتجميل الحي وإعادتها لحالتها الطبيعية.",
+      "status": "ACTIVE",
+      "taskTypes": [
+        "DUMPING_REPORT"
+      ],
+      "availableTasks": 12,
+      "minRewardPoints": 50,
+      "maxRewardPoints": 120,
+      "distanceMeters": 850,
+      "areaGeoJson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.66,
+              24.71
+            ],
+            [
+              46.7,
+              24.71
+            ],
+            [
+              46.7,
+              24.75
+            ],
+            [
+              46.66,
+              24.75
+            ],
+            [
+              46.66,
+              24.71
+            ]
+          ]
+        ]
+      },
+      "startAt": "2026-10-19T12:31:30.237Z",
+      "endAt": "2026-11-20T12:31:30.237Z",
+      "createdAt": "2026-10-16T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "m2222222-2222-2222-2222-222222222222",
+      "title": "تسليم المواد القابلة لإعادة التدوير",
+      "description": "فرز وتسليم البلاستيك والورق والمعادن في مراكز التجميع المعتمدة للحصول على مكافآت فورية.",
+      "status": "ACTIVE",
+      "taskTypes": [
+        "RECYCLING_DROPOFF"
+      ],
+      "availableTasks": 8,
+      "minRewardPoints": 30,
+      "maxRewardPoints": 90,
+      "distanceMeters": 2100,
+      "areaGeoJson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.67,
+              24.72
+            ],
+            [
+              46.71,
+              24.72
+            ],
+            [
+              46.71,
+              24.76
+            ],
+            [
+              46.67,
+              24.76
+            ],
+            [
+              46.67,
+              24.72
+            ]
+          ]
+        ]
+      },
+      "startAt": "2026-10-17T12:31:30.237Z",
+      "endAt": "2026-12-05T12:31:30.237Z",
+      "createdAt": "2026-10-15T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "m3333333-3333-3333-3333-333333333333",
+      "title": "تحدي التنقل الأخضر المستدام",
+      "description": "استخدام وسائل النقل العام (قطار الرياض / الحافلات) أو الدراجة وتوثيق خط سير الرحلة.",
+      "status": "ACTIVE",
+      "taskTypes": [
+        "PUBLIC_TRANSPORT"
+      ],
+      "availableTasks": 6,
+      "minRewardPoints": 40,
+      "maxRewardPoints": 100,
+      "distanceMeters": 3800,
+      "areaGeoJson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              46.65,
+              24.7
+            ],
+            [
+              46.75,
+              24.7
+            ],
+            [
+              46.75,
+              24.8
+            ],
+            [
+              46.65,
+              24.8
+            ],
+            [
+              46.65,
+              24.7
+            ]
+          ]
+        ]
+      },
+      "startAt": "2026-10-21T12:31:30.237Z",
+      "endAt": "2026-11-04T12:31:30.237Z",
+      "createdAt": "2026-10-21T12:31:30.237Z",
+      "updatedAt": "2026-10-21T12:31:30.237Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-11111111-1111-1111-1111-111111111111",
+      "campaignId": "m1111111-1111-1111-1111-111111111111",
+      "type": "DUMPING_REPORT",
+      "title": "توثيق نقطة تجمع مخلفات عند تقاطع الأمل",
+      "instructions": "التقط صورتين واضحتين: صورة شاملة للموقع وصورة مقربة للمخلفات، ثم أعد التصوير بعد التنظيف.",
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "radiusMeters": 300,
+      "rewardPoints": 75,
+      "status": "OPEN",
+      "distanceMeters": 450,
+      "expiresAt": "2026-10-24T12:31:30.237Z",
+      "createdAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "t-22222222-2222-2222-2222-222222222222",
+      "campaignId": "m1111111-1111-1111-1111-111111111111",
+      "type": "DUMPING_REPORT",
+      "title": "إزالة المخلفات البلاستيكية بجوار ممشى الحي",
+      "instructions": "قم بجمع الأكياس والعبوات البلاستيكية ووضعها في الحاوية المخصصة وتأكيد ذلك بصورة واضحة.",
+      "location": {
+        "lat": 24.7198,
+        "lng": 46.6812
+      },
+      "radiusMeters": 400,
+      "rewardPoints": 90,
+      "status": "OPEN",
+      "distanceMeters": 920,
+      "expiresAt": "2026-10-26T12:31:30.237Z",
+      "createdAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "t-33333333-3333-3333-3333-333333333333",
+      "campaignId": "m2222222-2222-2222-2222-222222222222",
+      "type": "RECYCLING_DROPOFF",
+      "title": "تسليم 5 كجم بلاستيك لمركز التدوير الذكي",
+      "instructions": "توجه لمركز الفرز المعتمد، قم بوزن المواد والتقط صورة لإيصال الاستلام وكود الحاوية الذكية.",
+      "location": {
+        "lat": 24.725,
+        "lng": 46.69
+      },
+      "radiusMeters": 500,
+      "rewardPoints": 60,
+      "status": "OPEN",
+      "distanceMeters": 1850,
+      "expiresAt": "2026-10-28T12:31:30.237Z",
+      "createdAt": "2026-10-21T12:31:30.237Z"
+    },
+    {
+      "id": "t-44444444-4444-4444-4444-444444444444",
+      "campaignId": "m3333333-3333-3333-3333-333333333333",
+      "type": "PUBLIC_TRANSPORT",
+      "title": "رحلة خضراء عبر قطار الرياض - المسار الأزرق",
+      "instructions": "ابدأ الرحلة من المحطة وسجل إحداثيات البداية والنهاية عبر التطبيق للمساهمة في خفض الانبعاثات.",
+      "location": {
+        "lat": 24.71,
+        "lng": 46.67
+      },
+      "radiusMeters": 800,
+      "rewardPoints": 50,
+      "status": "OPEN",
+      "distanceMeters": 2200,
+      "expiresAt": "2026-10-31T12:31:30.237Z",
+      "createdAt": "2026-10-21T12:31:30.237Z"
+    }
+  ],
+  "reservations": [],
+  "submissions": [
+    {
+      "id": "s1111111-1111-1111-1111-111111111111",
+      "taskId": "t-11111111-1111-1111-1111-111111111111",
+      "campaignId": "m1111111-1111-1111-1111-111111111111",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "status": "PENDING_REVIEW",
+      "verificationScore": 88,
+      "reasonCodes": [],
+      "note": "تم إنجاز التنظيف وإزالة النفايات البلاستيكية بنجاح بجوار الشارع العام.",
+      "location": {
+        "lat": 24.7136,
+        "lng": 46.6753
+      },
+      "evidence": [
+        {
+          "id": "e-1",
+          "storageKey": "evidence/clean1.jpg",
+          "mimeType": "image/jpeg",
+          "sizeBytes": 1024500,
+          "checksum": "abc123hash",
+          "publicUrl": "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=800&q=80",
+          "createdAt": "2026-10-21T09:31:30.237Z"
+        }
+      ],
+      "createdAt": "2026-10-21T09:31:30.237Z",
+      "updatedAt": "2026-10-21T09:31:30.237Z"
+    },
+    {
+      "id": "s2222222-2222-2222-2222-222222222222",
+      "taskId": "t-33333333-3333-3333-3333-333333333333",
+      "campaignId": "m2222222-2222-2222-2222-222222222222",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "status": "NEEDS_INFO",
+      "verificationScore": 65,
+      "reasonCodes": [
+        "INVALID_MEDIA"
+      ],
+      "note": "الصورة الأولى مظلمة قليلاً، يرجى إعادة إرسال صورة إيصال الوزن بوضوح.",
+      "location": {
+        "lat": 24.725,
+        "lng": 46.69
+      },
+      "evidence": [
+        {
+          "id": "e-2",
+          "storageKey": "evidence/recycle1.jpg",
+          "mimeType": "image/jpeg",
+          "sizeBytes": 854000,
+          "checksum": "xyz456hash",
+          "publicUrl": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80",
+          "createdAt": "2026-10-21T00:31:30.237Z"
+        }
+      ],
+      "createdAt": "2026-10-20T22:31:30.237Z",
+      "updatedAt": "2026-10-21T00:31:30.237Z"
+    },
+    {
+      "id": "s3333333-3333-3333-3333-333333333333",
+      "taskId": "t-22222222-2222-2222-2222-222222222222",
+      "campaignId": "m1111111-1111-1111-1111-111111111111",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "status": "APPROVED",
+      "verificationScore": 95,
+      "reasonCodes": [],
+      "note": "عمل ممتاز وتم التأكد من نظافة المنطقة وتطابق الموقع الجغرافي 100%.",
+      "location": {
+        "lat": 24.7198,
+        "lng": 46.6812
+      },
+      "evidence": [
+        {
+          "id": "e-3",
+          "storageKey": "evidence/park_clean.jpg",
+          "mimeType": "image/jpeg",
+          "sizeBytes": 1420000,
+          "checksum": "hash789",
+          "publicUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+          "createdAt": "2026-10-19T12:31:30.237Z"
+        }
+      ],
+      "verifiedAt": "2026-10-19T12:31:30.237Z",
+      "verifiedBy": "22222222-2222-2222-2222-222222222222",
+      "createdAt": "2026-10-18T12:31:30.237Z",
+      "updatedAt": "2026-10-19T12:31:30.237Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1111111-1111-1111-1111-111111111111",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "type": "REWARD",
+      "title": "تم إيداع المكافأة في محفظتك 🎉",
+      "message": "تمت إضافة +80 نقطة إلى محفظتك مقابل اعتماد مهمة \"تنظيف مسار الشارع البيئي\".",
+      "entityId": "s3333333-3333-3333-3333-333333333333",
+      "deepLink": null,
+      "payload": {
+        "points": 80
+      },
+      "isRead": false,
+      "readAt": null,
+      "createdAt": "2026-10-21T12:06:30.237Z"
+    },
+    {
+      "id": "n2222222-2222-2222-2222-222222222222",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "type": "NEEDS_INFO",
+      "title": "مطلوب توضيح إضافي للإثبات ⚠️",
+      "message": "صورة إثبات إعادة التدوير غير واضحة تماماً. يرجى إعادة رفع صورة واضحة للحاوية المخصصة.",
+      "entityId": "s2222222-2222-2222-2222-222222222222",
+      "deepLink": null,
+      "payload": {
+        "submissionId": "s2222222-2222-2222-2222-222222222222"
+      },
+      "isRead": false,
+      "readAt": null,
+      "createdAt": "2026-10-21T09:31:30.237Z"
+    },
+    {
+      "id": "n3333333-3333-3333-3333-333333333333",
+      "userId": "11111111-1111-1111-1111-111111111111",
+      "type": "MISSION",
+      "title": "مهمة بيئية جديدة بالقرب منك 🌱",
+      "message": "تحدي التنقل الأخضر المستدام متاح الآن في منطقتك — اكسب حتى 100 نقطة.",
+      "entityId": "m3333333-3333-3333-3333-333333333333",
+      "deepLink": null,
+      "payload": {},
+      "isRead": true,
+      "readAt": "2026-10-21T04:31:30.237Z",
+      "createdAt": "2026-10-21T03:31:30.237Z"
+    }
+  ],
+  "verifications": {
+    "11111111-1111-1111-1111-111111111111": {
+      "status": "PENDING",
+      "documentType": "NATIONAL_ID",
+      "documentNumber": "1098765432",
+      "idDocumentUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+      "selfieUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "countryCode": "SA",
+      "note": "طلب توثيق حساب مواطن لأثر بيئي معتمد.",
+      "submittedAt": "2026-10-20T12:31:30.237Z",
+      "reviewedAt": null,
+      "reviewerNotes": null
+    }
+  },
+  "deviceTokens": []
+}
